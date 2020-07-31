@@ -54,7 +54,6 @@ export const Dashboard: React.FC<DashboardProps> = props => {
   return (
     <Screen>
       <Container padding>
-        {showSignPosts}
         {showCredentials}
       </Container>
     </Screen>

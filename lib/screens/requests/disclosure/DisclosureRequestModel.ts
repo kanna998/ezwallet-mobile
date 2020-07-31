@@ -1,5 +1,6 @@
 import { capitalizeFirstLetter } from 'uPortMobile/lib/utilities/string'
 import { UserInfo } from 'uPortMobile/lib/types/Credentials'
+import { Images } from 'uPortMobile/lib/kancha'
 
 /**
  * Types for the disclourse request
@@ -110,7 +111,7 @@ const DisclosureRequestModel = (props: any): DisclosureRequestModelType | null =
     target: props.target,
     componentId: props.componentId,
     appBranding: {
-      profileImage: props.client && props.client.avatar,
+      profileImage: Images.profile.gPortal,
       bannerImage: props.client && props.client.bannerImage,
       requestor: props.client && props.client.name,
     },
@@ -118,6 +119,7 @@ const DisclosureRequestModel = (props: any): DisclosureRequestModelType | null =
     error: props.error ? parseErrorMessage(props.error) : null,
   }
 
+  console.log(disclosureRequestCommon);
   /**
    * Create New Account
    *
@@ -162,10 +164,10 @@ const DisclosureRequestModel = (props: any): DisclosureRequestModelType | null =
    */
   if (props.actType === 'none' || props.accountAuthorized === true) {
     return {
-      title: 'Share to login',
+      title: 'Share Consent',
       description: null,
       actionButton: {
-        text: 'Login',
+        text: 'Share',
         action: props.authorizeRequest,
         disabled: props.missingRequired,
         actionType: 'none',

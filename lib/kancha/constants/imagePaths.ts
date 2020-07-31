@@ -4,9 +4,10 @@ export const Images = {
   },
   profile: {
     avatar: require('uPortMobile/assets/images/default_profile_image.png'),
+    gPortal:require('uPortMobile/assets/images/govt_portal.png'),
   },
   branding: {
-    logoWhite: require('uPortMobile/assets/images/uport-white.png'),
+    homeLogo: require('uPortMobile/assets/images/ezwallet_icon.png'),
   },
   backgrounds: {
     purpleGradientURI: 'uPortMobile/assets/images/background-purple-gradient.png',

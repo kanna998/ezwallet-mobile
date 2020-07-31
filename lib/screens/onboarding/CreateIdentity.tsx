@@ -157,7 +157,7 @@ class CreateIdentity extends React.Component<CreateIdentityProps, CreateIdentity
 
           <Container alignItems={'center'} paddingBottom paddingTop>
             <Text type={Text.Types.H2} bold>
-              Personalize uPort
+            Personalize EZ Wallet
             </Text>
             <Container paddingTop={5} paddingBottom>
               <Text type={Text.Types.SubTitle}>Add your name and optional photo</Text>

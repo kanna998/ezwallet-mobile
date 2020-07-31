@@ -157,6 +157,8 @@ const withDisclosureRequestCardModel = <P extends object>(
   WrappedComponent: React.ComponentType<DisclosureRequestModelType>,
 ) => {
   const WithDisclosureRequestCardModel: React.FC<DisclosureRequestContainerProps> = props => {
+    console.log("WithDisclosureRequestCardModel : Props:");
+    console.log(props);
     const requestModelProps = disclosureRequestModel(props)
     return requestModelProps && requestModelProps.requestId ? (
       <WrappedComponent {...requestModelProps} />

@@ -29,9 +29,9 @@ class Welcome extends React.Component<WelcomeProps> {
         statusBarHidden>
         <Container flex={1}>
           <Container flex={1} justifyContent={'space-around'} alignItems={'center'} paddingTop={50}>
-            <Image source={Images.branding.logoWhite} style={{ height: 100 }} resizeMode={'contain'} />
+            <Image source={Images.branding.homeLogo} style={{ height: 200 }} resizeMode={'contain'} />
             <Text type={Text.Types.H3} textColor={'white'} bold textAlign={'center'}>
-              Get started by creating a new identity.
+            Safely store and share your verifiable credentials.
             </Text>
           </Container>
           <Container flex={1} paddingTop alignItems={'center'}>
@@ -55,30 +55,6 @@ class Welcome extends React.Component<WelcomeProps> {
                 }
                 type={Button.Types.Custom}
                 block={Button.Block.Filled}
-              />
-              <Button
-                testID={TESTID.ONBOARDING_RECOVER}
-                bold
-                fullWidth
-                buttonText={'Recover Identity'}
-                onPress={() =>
-                  Navigation.push(this.props.componentId, {
-                    component: {
-                      name: SCREENS.RECOVERY.RestoreSeedInstructions,
-                      options: {
-                        topBar: {
-                          backButton: {
-                            title: 'Back',
-                            color: Theme.colors.primary.brand,
-                            visible: true,
-                          },
-                        },
-                      },
-                    },
-                  })
-                }
-                type={Button.Types.Custom}
-                block={Button.Block.Clear}
               />
             </Container>
           </Container>

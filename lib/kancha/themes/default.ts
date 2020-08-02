@@ -17,7 +17,8 @@ export const COLORS = {
   WASHED_GREEN: '#3DCF8A',
   SUNNY_ORANGE: '#E89835',
   TRANSPARENT: 'transparent',
-  BLURPLE: '#5952ff'
+  BLURPLE: '#5952ff',
+  TEALGREEN:'#00796B'
 }
 
 /**
@@ -200,7 +201,7 @@ const DefaultTheme: Kancha.ThemeStatic = {
       underlay: COLORS.TRANSPARENT,
       button: COLORS.WHITE,
       buttonText: {
-        filled: COLORS.ROYAL_PURPLE,
+        filled: COLORS.TEALGREEN,
         outlined: COLORS.WHITE,
         clear: COLORS.WHITE,
       },

@@ -15,6 +15,8 @@ export const Images = {
     purpleGradientWithPattern: require('uPortMobile/assets/images/background-purple-gradient-pattern.png'),
     purpleGradientHalve: require('uPortMobile/assets/images/background-purple-gradient-halve.png'),
     purpleCircle: require('uPortMobile/assets/images/purple-circle.png'),
+    greenbackground: require('uPortMobile/assets/images/backgroundgreen.png'),
+    greenNavBackground: require('uPortMobile/assets/images/nav-background-tealgreen.png'),
   },
   onboarding: {
     eye: require('uPortMobile/assets/images/onboarding-eye.png'),

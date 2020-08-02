@@ -17,7 +17,7 @@ const Learn: React.FC<LearnProps> = props => {
     <Screen
       type={Screen.Types.Custom}
       config={Screen.Config.SafeNoScroll}
-      backgroundImage={Images.backgrounds.purpleGradientHalve}
+      backgroundImage={Images.backgrounds.greenNavBackground}
       statusBarHidden
       footerNavComponent={
         <Container alignItems={'center'} paddingBottom>

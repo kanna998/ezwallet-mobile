@@ -18,7 +18,7 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 
-import { Container, CredentialExplorer, Screen, Banner, Card, Text, Section, Theme, Button } from '@kancha'
+import { Container, CredentialExplorer, Screen, Banner, Card, Text, Section, Theme, Button, Images } from '@kancha'
 
 interface AcceptCredentialProps {
   verification: any
@@ -70,7 +70,7 @@ export const AcceptCredential: React.FC<AcceptCredentialProps> = props => {
             size="small"
             requestor={props.title}
             subTitle={`Issued by ` + props.issuer.name}
-            avatar={props.issuer.avatar && props.issuer.avatar}
+            avatar={Images.profile.gPortal}
             httpsResolveStatus={'OKAY'}
             backgroundImage={props.issuer.bannerImage && props.issuer.bannerImage}
           />

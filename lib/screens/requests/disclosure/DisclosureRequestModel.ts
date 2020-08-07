@@ -106,6 +106,9 @@ const DisclosureRequestModel = (props: any): DisclosureRequestModelType | null =
   /**
    * Global for all disclosure request
    */
+
+   console.log(props);
+   
   const disclosureRequestCommon = {
     requestId: props.requestId,
     target: props.target,
@@ -163,17 +166,21 @@ const DisclosureRequestModel = (props: any): DisclosureRequestModelType | null =
    * Share to Login
    */
   if (props.actType === 'none' || props.accountAuthorized === true) {
+    console.log(props);
+    console.log("props ^^");
+    let label = {title:'', buttonText : ''};
+    label = props.verified && props.verified.length > 0 ? {title :'Share Credientials', buttonText: 'Share'}: {title :'Provide Consent', buttonText : 'Approve'};
     return {
-      title: 'Share Consent',
+      title: label.title,
       description: null,
       actionButton: {
-        text: 'Share',
+        text: label.buttonText,
         action: props.authorizeRequest,
         disabled: props.missingRequired,
         actionType: 'none',
       },
       cancelButton: {
-        text: 'Cancel',
+        text: 'Deny',
         action: props.cancelRequest,
         disabled: false,
       },

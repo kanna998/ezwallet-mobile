@@ -22,7 +22,7 @@ interface CredentialProps {
 }
 
 const Credential: React.FC<CredentialProps> = props => {
-  // console.tron.log(props)
+  console.log(props);
 
   const baseStyle = {
     margin: 10,
@@ -88,7 +88,7 @@ const Credential: React.FC<CredentialProps> = props => {
             }}>
             {props.issuer ? (
               <Container padding={3} backgroundColor={Theme.colors.primary.background} br={4}>
-                <Avatar size={40} source={props.issuer} />
+                <Avatar size={40} source={props.issuer} claimType={props.claimType} />
               </Container>
             ) : (
               <Container padding={3} w={40} />

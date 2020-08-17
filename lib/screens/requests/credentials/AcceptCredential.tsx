@@ -73,6 +73,7 @@ export const AcceptCredential: React.FC<AcceptCredentialProps> = props => {
             avatar={Images.profile.gPortal}
             httpsResolveStatus={'OKAY'}
             backgroundImage={props.issuer.bannerImage && props.issuer.bannerImage}
+            backgroundColor="#448AFF"
           />
           <Section noTopBorder noTopMargin>
             <CredentialExplorer claim={props.verification.claim} />

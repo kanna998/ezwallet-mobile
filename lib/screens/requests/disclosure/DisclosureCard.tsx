@@ -84,6 +84,7 @@ export const DisclosureCard: React.FC<DisclosureRequestModelType> = requestModel
             backgroundImage={requestModel.appBranding.bannerImage}
             avatar={requestModel.appBranding.profileImage}
             requestor={requestModel.appBranding.requestor}
+            backgroundColor="#448AFF"
           />
           <IndicatorBar text={requestModel.title} />
           {requestModel.description !== null && (
